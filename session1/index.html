@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TOEIC A – Buổi 1 | Bài tập về nhà</title>
+  <meta name="description" content="Bài tập về nhà buổi 1 khóa TOEIC A" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../style.css" />
+  <link rel="stylesheet" href="session.css" />
+</head>
+<body>
+
+  <!-- TOP BAR -->
+  <nav class="topbar">
+    <a href="../index.html" class="back-btn" id="backBtn">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+        <polyline points="15 18 9 12 15 6"/>
+      </svg>
+      Danh sách buổi học
+    </a>
+    <div class="topbar-title">TOEIC A – Buổi 1</div>
+    <div class="topbar-right">
+      <span class="deadline-badge">⏰ Deadline: 23:00  11/04/2026</span>
+    </div>
+  </nav>
+
+  <!-- SESSION HERO -->
+  <div class="session-hero">
+    <div class="session-hero-bg"></div>
+    <div class="session-hero-content">
+      <div class="badge">Buổi 1 / 24</div>
+      <h1>Bài Tập Về Nhà</h1>
+      <p class="hero-sub">Hoàn thành các bài tập bên dưới trước deadline. Chúc bạn học tốt! 🎯</p>
+    </div>
+  </div>
+
+  <!-- TABS -->
+  <div class="tabs-wrapper">
+    <div class="tabs" id="tabs">
+      <button class="tab active" data-tab="homework" id="tab-homework">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/>
+          <path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"/>
+        </svg>
+        Bài tập
+      </button>
+      <button class="tab" data-tab="video" id="tab-video">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <polygon points="23 7 16 12 23 17 23 7"/><rect x="1" y="5" width="15" height="14" rx="2" ry="2"/>
+        </svg>
+        Videos
+      </button>
+      <button class="tab" data-tab="audio" id="tab-audio">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="3"/>
+        </svg>
+        Audio
+      </button>
+      <button class="tab" data-tab="vocab" id="tab-vocab">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/>
+          <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/>
+        </svg>
+        Từ vựng
+      </button>
+    </div>
+  </div>
+
+  <!-- CONTENT PANELS -->
+  <main class="session-main" id="sessionMain">
+
+    <!-- HOMEWORK TAB -->
+    <div class="tab-panel active" id="panel-homework">
+      <div class="panel-placeholder">
+        <div class="placeholder-icon">📝</div>
+        <h3>Bài tập về nhà – Buổi 1</h3>
+        <p>Nội dung bài tập sẽ được bổ sung tại đây.<br/>Gửi tài liệu cho admin để cập nhật.</p>
+        <div class="placeholder-hint">
+          File bài tập có thể là: PDF, Word, hoặc bài quiz trực tiếp
+        </div>
+      </div>
+    </div>
+
+    <!-- VIDEO TAB -->
+    <div class="tab-panel" id="panel-video">
+      <div class="panel-placeholder">
+        <div class="placeholder-icon">🎬</div>
+        <h3>Videos Buổi 1</h3>
+        <p>Danh sách video buổi học sẽ hiển thị tại đây.</p>
+        <div class="placeholder-hint">
+          Hỗ trợ: YouTube embed, video local (.mp4), Google Drive
+        </div>
+      </div>
+    </div>
+
+    <!-- AUDIO TAB -->
+    <div class="tab-panel" id="panel-audio">
+      <div class="panel-placeholder">
+        <div class="placeholder-icon">🎧</div>
+        <h3>Audio Buổi 1</h3>
+        <p>Danh sách audio trong buổi học sẽ hiển thị tại đây.</p>
+        <div class="placeholder-hint">
+          Hỗ trợ: file .mp3, .wav, .ogg
+        </div>
+      </div>
+    </div>
+
+    <!-- VOCAB TAB -->
+    <div class="tab-panel" id="panel-vocab">
+      <div class="panel-placeholder">
+        <div class="placeholder-icon">📚</div>
+        <h3>Từ Vựng Buổi 1</h3>
+        <p>Danh sách từ vựng cần học sẽ hiển thị tại đây.</p>
+        <div class="placeholder-hint">
+          Gửi file từ vựng (Excel/Word/PDF) để tích hợp vào đây
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <script>
+    // Tab switching
+    const tabs   = document.querySelectorAll('.tab');
+    const panels = document.querySelectorAll('.tab-panel');
+
+    tabs.forEach(tab => {
+      tab.addEventListener('click', () => {
+        tabs.forEach(t => t.classList.remove('active'));
+        panels.forEach(p => p.classList.remove('active'));
+        tab.classList.add('active');
+        document.getElementById('panel-' + tab.dataset.tab).classList.add('active');
+      });
+    });
+  </script>
+</body>
+</html>

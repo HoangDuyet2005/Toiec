@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TOEIC A – Buổi 1: Bài tập về nhà</title>
+  <meta name="description" content="Bài tập về nhà Buổi 1 – TOEIC A. Nghe và điền từ vào chỗ trống." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../style.css" />
+  <link rel="stylesheet" href="homework.css" />
+</head>
+<body>
+
+  <!-- ===== TOPBAR ===== -->
+  <nav class="hw-topbar">
+    <a href="../index.html" class="back-btn" id="backToList">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+        <polyline points="15 18 9 12 15 6"/>
+      </svg>
+      Danh sách
+    </a>
+    <div class="hw-topbar-center">
+      <span class="hw-topbar-label">TOEIC A – Buổi 1</span>
+      <span class="hw-topbar-subtitle">Bài tập về nhà</span>
+    </div>
+    <div class="hw-topbar-right">
+      <span class="deadline-badge" id="deadlineBadge">⏰ 23:00 · 11/04/2026</span>
+    </div>
+  </nav>
+
+  <!-- ===== INSTRUCTION ===== -->
+  <div class="hw-instruction" id="hwInstruction">
+    <span class="hw-instruction-icon">📢</span>
+    <span><strong>Hướng dẫn:</strong> Nghe và điền từ vào tất cả các ô trống, sau đó chọn đáp án đúng cho mỗi câu. Kết quả chỉ hiển thị sau khi nhấn <strong>Nộp bài</strong>.</span>
+  </div>
+
+  <!-- ===== MAIN LAYOUT ===== -->
+  <div class="hw-layout">
+    <main class="hw-question-area" id="questionArea">
+      <!-- Filled by JS -->
+    </main>
+  </div>
+
+  <!-- ===== BOTTOM BAR ===== -->
+  <div class="hw-bottom-bar">
+    <button class="hw-arrow-btn" id="prevBtn" title="Câu trước">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+        <polyline points="15 18 9 12 15 6"/>
+      </svg>
+    </button>
+    <div class="hw-bottom-center">
+      <div class="q-counter" id="qCounter">Câu 1 / 20</div>
+      <div class="hw-pm-track">
+        <div class="hw-pm-bar" id="pmBar" style="width:0%"></div>
+      </div>
+    </div>
+    <button class="hw-arrow-btn" id="nextBtn" title="Câu tiếp">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+        <polyline points="9 18 15 12 9 6"/>
+      </svg>
+    </button>
+    <button class="hw-submit-btn" id="submitBtn">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+        <polyline points="20 6 9 17 4 12"/>
+      </svg>
+      Nộp bài
+    </button>
+  </div>
+
+  <!-- ===== RESULT OVERLAY ===== -->
+  <div class="hw-result-overlay" id="resultOverlay">
+    <div class="hw-result-modal" id="resultModal">
+      <div class="hw-result-header">
+        <h2 id="resultTitle">Kết quả</h2>
+        <button class="hw-result-close" id="resultClose">✕</button>
+      </div>
+      <div class="hw-result-score" id="resultScore"></div>
+      <div class="hw-result-breakdown" id="resultBreakdown"></div>
+      <div class="hw-result-actions">
+        <button class="hw-result-btn-secondary" id="reviewBtn">Xem lại bài</button>
+        <button class="hw-result-btn-secondary" id="redoBtn">Làm lại</button>
+        <a href="exam.html" class="hw-result-btn-primary" style="text-decoration:none; display:inline-flex; align-items:center;">
+          Tiếp tục: Thi thử →
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <script src="homework.js"></script>
+</body>
+</html>
